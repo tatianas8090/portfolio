@@ -1,11 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from .models import post
+# Create your views here.
 
-def render_posts(request):
-    posts = post.objects.all()
-    return render(request, 'posts.html', {'posts':posts})
+
+
+def posts(request):
+    posts=post.objects.all()
+    return render(request, 'posts.html', {'posts': posts})
 
 
 def post_detail(request, post_id):
-    post = get_object_or_404(post, pk=post_id)
-    return render(request, 'post_detail.html', {'post':post}) 
+    posts=get_object_or_404(post, pk=post_id )
+    return render(request, 'post_detail.html', {'posts': posts})    
