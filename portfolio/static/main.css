@@ -1,267 +1,66 @@
-.main{
-    width: 100%;
-    height: auto;
-    background-color: rgba(20, 20, 20, 0.192);
-    font-family: poppins;
-    padding: 50px 0;
-    display: grid;
-    place-items: center;
-}
-.main .heading{
-    font-size: 29px;
-    font-weight: 500;
-    color: rgb(106, 6, 236);
-    position: relative;
-    margin-bottom: 100px;
-}
-.heading::after{
-    content: " ";
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    left: 50%;
-    bottom: -5px;
-    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
-    transform: translateX(-50%);
-}
-.experienceabout {
-    font-weight: 500;
-    color: rgb(236, 6, 228);
-    float:left;
-    height: 80px;
-    margin-right: 600px;
-
-}
-
-.containerabout{
-    width: 70%;
-    height: auto;
-    margin:auto 0;
-    position: relative;
-}
-
-.containerabout ul::after{
-    position: absolute;
-    content: '';
-    width: 2px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
-}
-.containerabout ul{
-    list-style: none;
-}
-.containerabout ul li{
-    width: 50%;
-    height: auto;
-    padding: 15px 20px;
-    background-color: #ffff;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.192);
-    position: relative;
-    z-index: 99;
-}
-.containerabout ul li:nth-child(odd){
-    float: left;
-    clear: right;
-    transform: translateX(-30px);
-}
-.containerabout ul li:nth-child(odd) .dateabout{
-    right: 20px;
-}
-.containerabout ul li:nth-child(even){
-    float: right;
-    clear: left;
-    transform: translateX(30px);
-}
-.containerabout ul li:nth-child(4){
-    margin-bottom: 0;
-}
-.containerabout ul li .titleabout{
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(106, 6, 236);
-}
-ul li p{
-    font-size: 15px;
-    color: #444;
-    margin: 7px 0;
-    line-height: 23px;
-}
-ul li a{
-    font-size: 15px;
-    color: rgb(106, 6, 236);
-    text-decoration: none;
-}
-ul li .dateabout{
-    position: absolute;
-    top: -45px;
-    width: 130px;
-    height: 33px;
-    border-radius: 15px;
-    color: #fff;
-    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
-    display: grid;
-    place-items: center;
-    font-size: 14px;
-}
-.containerabout ul li .circle{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgba(220, 0, 240, 0.401);
-    position: absolute;
-    top: 0;
-    display: grid;
-    place-items: center;
-}
-.containerabout ul li .circle::after{
-    content: '';
-    width: 15px;
-    height: 15px;
-    background-color: rgb(106, 6, 236);
-    border-radius: 50%;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-}
-.containerabout ul li:nth-child(odd) .circle{
-    right: -15px;
-    transform: translate(50%, -50%);
-}
-.containerabout ul li:nth-child(even) .circle{
-    left: -45px;
-    transform: translate(-50%, -50%);
-}
-
-
-/*  Media Query */
-
-@media screen and (max-width:1224px){
-    .containerabout{
-        width: 85%;
-    }
-}
-
-@media screen and (max-width:1224px){
-    .container{
-        width: 85%;
-    }
-}
-
-@media screen and (max-width:993px){
-    .container{
-        width: 80%;
-        transform: translateX(15px);
-    }
-    .container ul::after{
-        left: -30px;
-    }
-    .container ul li{
-        width: 100%;
-        float: none;
-        clear: none;
-        margin-bottom: 80px;
-    }
-    .container ul li:nth-child(odd){
-        text-align: center;
-        transform: translateX(0);
-    }
-    .container ul li:nth-child(odd) .date{
-        left: 20px;
-    }
-    .container ul li:nth-child(odd) .circle{
-        left: -30px;
-        transform: translate(-50%, -50%);
-    }
-    .container ul li:nth-child(even){
-        transform: translateX(0);
-    }
-}
-
-.skills{
-    padding: 50px;
-    color: rgb(106, 6, 236);
-}
-
-.skill {
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    color:#fff;
-}
-
-.skill i {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.skill h3 {
-    margin: 10px 0;
-}
-
-.skill p {
-  font-style: italic;
-} 
-
-
-.navbar {
-    background-image: url("../static/portfolio/rectangle\ .png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    width: 100%;
-    height: 210px;
-}
-
-.tati {
-    top:15px;
-    position: relative; 
-    left: 115px;
-}
-  
-.tati p {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: rgb(106, 6, 236);
-}
-
-.fullstack-text {
-    font-size: 1.2em;
-    color:#ffff;
-    height: 15px;
-    text-align: center;
-    
-}
-  
-.fullstack {
-    top: 70px;
-    position: relative;
-}
-
-
-.aboutme{
-    font-size: 29px;
-    font-weight: 500;
-    color: rgb(106, 6, 236);
-    position: relative;
-    margin-bottom: 100px;
-    background-color: rgba(20, 20, 20, 0.192);
-    font-family: poppins;
-    padding: 3px 0;
-    display: grid;
-    place-items: center;
-}
-
+ /* TATIANA */
 .img {
     width: 72px;
     height: 72px
 }
+.container.aboutme {
+    max-width: 960px;
+}
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+  
+.texttati {
+    text-align: center;
+    font-weight: bold;
+    font-family: poppins;
+}
+  
+.texttati h1 {
+    font-size: 45px;
+    color: rgb(106, 6, 236);
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: poppins;
+}
+  
+.fullstack-text p {
+    font-size: 18px;
+    color: #ffff
+}
+  
+.description {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: poppins;
+    color: #8b9199;
+    
+}
+  
+.description p {
+    margin-top: 30px;
+}
 
+@media (max-width: 767px) {
+    .container.aboutme {
+      padding: 0 10px;
+    }
+  
+    .texttati h1 {
+      font-size: 20px;
+    }
+  
+    .fullstack-text {
+      font-size: 16px;
+    }
+  
+    .description p {
+      margin-top: 20px;
+    }
+  }
 /* FOOTER */
 
 .img {
@@ -355,5 +154,3 @@ footer img {
 .titleposts{
     color:#000
 } 
-
-

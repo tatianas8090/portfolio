@@ -1,22 +1,14 @@
 {% extends 'layout.html' %} {% block content %} {% load static %}
 
+<section id="projectos">
 <div class="backgroundtotal">
   <div class="row my-4 text-center row bg-dark">
-  <h3>My Projects</h3>
+  <h3 style="color:rgb(106, 6, 236);text-center;">My Projects</h3>
   <p>These are some of the projects I've done</p>
   {% for project in projects %}
 
  <div class="col-md-4 p-4">
-    <div
-      class="card bg-black card-project"
-      style="
-        border: 1px solid #ffff; 
-        cursor: pointer;
-        height: 500px;
-        margin-top: 100px; 
-        background: #000; 
-      "
-    >
+  <div class="card bg-black card-project" style="border: 1px solid #ffff; cursor: pointer; height: 500px; margin-top: 100px; background: #000 !important;">
       <img src="{{project.image.url}}" class="card-img-top" />
       <div class="card-body">
         <h2>{{project.title}}</h2>
@@ -38,3 +30,4 @@
   {% endfor %} {% endblock %}
 </div>
 </div>
+</section>

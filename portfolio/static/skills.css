@@ -1,0 +1,30 @@
+.skills{
+    padding: 20px;
+    color: rgb(106, 6, 236);
+    text-align: center;
+    background-color: rgb(17, 16, 16);
+    width: 100%; 
+    height: auto;
+}
+
+.skill {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(17, 16, 16);
+    color:#fff;
+}
+
+.skill i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    margin: 10px 0;
+}
+
+.skill p {
+  font-style: italic;
+} 

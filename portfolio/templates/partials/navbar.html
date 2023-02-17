@@ -1,40 +1,34 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-lg">
-  <div class="container">
+  <div class="container nav">
     <img src="{% static 'portfolio/rectangle.png' %}" alt="" />
-    <button
-      class="navbar-toggler"
-      type="button tyle="color: white"
-      data-bs-toggle="collapse"
-      data-bs-target="#opciones"
-    >
-     <span class="navbar-toggler-icon"></span>
-    </button>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#opciones"
+  >
+    <span class="navbar-toggler-icon text-white" style="filter: invert(1);"></span>
+  </button>
     <div class="collapse navbar-collapse" id="opciones">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item d-flex align-items-center">
-          <a class="nav-link" href="" style="color: white">Home</a>
+          <a class="nav-link" href="#home" style="color: white">Home</a>
         </li>
         <li class="nav-item" style="margin-right: 25px">
-          <a class="nav-link" href="/blog" style="color: white">Portfolio</a>
+          <a class="nav-link" href="#projectos" style="color: white">Portfolio</a>
         </li>
         <li class="nav-item d-flex align-items-center">
-          <a class="nav-link" href="/About Me" style="color: white">About Me</a>
+          <a class="nav-link" href="#tato" style="color: white">About Me</a>
         </li>
         <li class="nav-item d-flex align-items-center">
-          <a class="nav-link" href="/About Me" style="color: white">Contact</a>
+          <a class="nav-link" href="#contacto" style="color: white">Contact</a>
         </li>
       </ul>
-      <div class="tati">
-      <p class="tati">Tatiana Solórzano</p>
-      </div>
-      <div class="fullstack">
-        <p class="fullstack-text">Full Stack Developer and Tourism</p>
-        <p class="fullstack-text"> And Hospitality Management</p>
-      </div>
       </div>
     </div>
   </div>
 </nav>  
+
 
