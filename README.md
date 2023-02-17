@@ -14,3 +14,5 @@ Django_portfolio es nuestra gran carpeta, seguido de ello tenemos la carpeta blo
 En esta se crea una subcarpeta la cual almacena las imagenes que son añadidas mediante /admin.
 
 Adicional a esto realizamos el respectivo deploy en pythonanywhere navegador que nos permite hacer visible nuestra portafolio. 
+Adicional  a ello se realizan test 
+![image](https://user-images.githubusercontent.com/114543688/219790835-d153b469-b59b-4fa2-9d2c-8b4a0379d6ff.png)
